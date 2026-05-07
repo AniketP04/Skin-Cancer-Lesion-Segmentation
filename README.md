@@ -1,6 +1,6 @@
 # Skin-Cancer-Lesion-Segmentation
 
-Automatic Skin Lesion Segmentation using SegNet, a Deep Learning architecture with certain extra requirements. Keeping the pre- and post-processing of the photos to a minimum is the secondary goal. The dermoscopic pictures in the PH2 dataset, which are part of the limited amount of images used to train the proposed model, were manually segmented.
+This project focuses on segmenting skin lesions from dermoscopic images using a modified SegNet-based deep learning model. To improve generalization and handle variations in lesion appearance, data preprocessing included resizing and normalization, and augmentation was implicitly leveraged through dataset shuffling and variability in training samples. The model was trained on the ISIC 2017 dataset, which contains diverse images with noise such as hair and low contrast, helping the network learn robust features. By exposing the model to varied input conditions during training, it becomes more resistant to overfitting and performs well on unseen data. The modified architecture reduces complexity while maintaining strong performance, achieving high Dice and Jaccard scores.
 
 **Dataset**
 ![Image](https://github.com/AniketP04/Skin-Cancer-Lesion-Segmentation/blob/main/paper.jpg)
